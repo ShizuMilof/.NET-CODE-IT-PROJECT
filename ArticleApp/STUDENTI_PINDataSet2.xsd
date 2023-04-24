@@ -1,0 +1,56 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<xs:schema id="STUDENTI_PINDataSet2" targetNamespace="http://tempuri.org/STUDENTI_PINDataSet2.xsd" xmlns:mstns="http://tempuri.org/STUDENTI_PINDataSet2.xsd" xmlns="http://tempuri.org/STUDENTI_PINDataSet2.xsd" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" xmlns:msprop="urn:schemas-microsoft-com:xml-msprop" attributeFormDefault="qualified" elementFormDefault="qualified">
+  <xs:annotation>
+    <xs:appinfo source="urn:schemas-microsoft-com:xml-msdatasource">
+      <DataSource DefaultConnectionIndex="0" FunctionsComponentName="QueriesTableAdapter" Modifier="AutoLayout, AnsiClass, Class, Public" SchemaSerializationMode="IncludeSchema" xmlns="urn:schemas-microsoft-com:xml-msdatasource">
+        <Connections>
+          <Connection AppSettingsObjectName="Settings" AppSettingsPropertyName="STUDENTI_PINConnectionString" ConnectionStringObject="" IsAppSettingsProperty="true" Modifier="Assembly" Name="STUDENTI_PINConnectionString (Settings)" ParameterPrefix="@" PropertyReference="ApplicationSettings.ArticleApp.Properties.Settings.GlobalReference.Default.STUDENTI_PINConnectionString" Provider="System.Data.SqlClient" />
+        </Connections>
+        <Tables>
+          <TableAdapter BaseClass="System.ComponentModel.Component" DataAccessorModifier="AutoLayout, AnsiClass, Class, Public" DataAccessorName="AA_articleTableAdapter" GeneratorDataComponentClassName="AA_articleTableAdapter" Name="AA_article" UserDataComponentName="AA_articleTableAdapter">
+            <MainSource>
+              <DbSource ConnectionRef="STUDENTI_PINConnectionString (Settings)" DbObjectName="STUDENTI_PIN.dbo.AA_article" DbObjectType="Table" FillMethodModifier="Public" FillMethodName="Fill" GenerateMethods="Both" GenerateShortCommands="false" GeneratorGetMethodName="GetData" GeneratorSourceName="Fill" GetMethodModifier="Public" GetMethodName="GetData" QueryType="Rowset" ScalarCallRetval="System.Object, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" UseOptimisticConcurrency="true" UserGetMethodName="GetData" UserSourceName="Fill">
+                <SelectCommand>
+                  <DbCommand CommandType="Text" ModifiedByUser="false">
+                    <CommandText>SELECT article_type_id, user_id, title, date_created FROM dbo.AA_article</CommandText>
+                    <Parameters />
+                  </DbCommand>
+                </SelectCommand>
+              </DbSource>
+            </MainSource>
+            <Mappings>
+              <Mapping SourceColumn="article_type_id" DataSetColumn="article_type_id" />
+              <Mapping SourceColumn="user_id" DataSetColumn="user_id" />
+              <Mapping SourceColumn="title" DataSetColumn="title" />
+              <Mapping SourceColumn="date_created" DataSetColumn="date_created" />
+            </Mappings>
+            <Sources />
+          </TableAdapter>
+        </Tables>
+        <Sources />
+      </DataSource>
+    </xs:appinfo>
+  </xs:annotation>
+  <xs:element name="STUDENTI_PINDataSet2" msdata:IsDataSet="true" msdata:UseCurrentLocale="true" msprop:EnableTableAdapterManager="True" msprop:Generator_UserDSName="STUDENTI_PINDataSet2" msprop:Generator_DataSetName="STUDENTI_PINDataSet2">
+    <xs:complexType>
+      <xs:choice minOccurs="0" maxOccurs="unbounded">
+        <xs:element name="AA_article" msprop:Generator_RowEvHandlerName="AA_articleRowChangeEventHandler" msprop:Generator_RowDeletedName="AA_articleRowDeleted" msprop:Generator_RowDeletingName="AA_articleRowDeleting" msprop:Generator_RowEvArgName="AA_articleRowChangeEvent" msprop:Generator_TablePropName="AA_article" msprop:Generator_RowChangedName="AA_articleRowChanged" msprop:Generator_RowChangingName="AA_articleRowChanging" msprop:Generator_TableClassName="AA_articleDataTable" msprop:Generator_RowClassName="AA_articleRow" msprop:Generator_TableVarName="tableAA_article" msprop:Generator_UserTableName="AA_article">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="article_type_id" msprop:Generator_ColumnPropNameInRow="article_type_id" msprop:Generator_ColumnPropNameInTable="article_type_idColumn" msprop:Generator_ColumnVarNameInTable="columnarticle_type_id" msprop:Generator_UserColumnName="article_type_id" type="xs:int" minOccurs="0" />
+              <xs:element name="user_id" msprop:Generator_ColumnPropNameInRow="user_id" msprop:Generator_ColumnPropNameInTable="user_idColumn" msprop:Generator_ColumnVarNameInTable="columnuser_id" msprop:Generator_UserColumnName="user_id" type="xs:int" minOccurs="0" />
+              <xs:element name="title" msprop:Generator_ColumnPropNameInRow="title" msprop:Generator_ColumnPropNameInTable="titleColumn" msprop:Generator_ColumnVarNameInTable="columntitle" msprop:Generator_UserColumnName="title" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="2147483647" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="date_created" msprop:Generator_ColumnPropNameInRow="date_created" msprop:Generator_ColumnPropNameInTable="date_createdColumn" msprop:Generator_ColumnVarNameInTable="columndate_created" msprop:Generator_UserColumnName="date_created" type="xs:dateTime" minOccurs="0" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:choice>
+    </xs:complexType>
+  </xs:element>
+</xs:schema>
